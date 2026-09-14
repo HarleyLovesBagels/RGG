@@ -12,7 +12,9 @@ guess = 0
     
 # if correct winner and print statement
 def ansCheck(inp, ans):
-  if ans > inp :
+  if (inp < 1 or inp > 100) :
+    print('Not valid')
+  elif ans > inp :
     print('Higher')
   elif ans < inp:
     print('Lower')
