@@ -1,6 +1,8 @@
+Random Guessing Python Game
+
 # Random Number guessing game
 
-# Create a rnadom number betwenen 1 - 100
+# Create a random number between 1 - 100
 import random
 
 randNum = random.randint(1,100)
@@ -33,13 +35,10 @@ while guess != randNum:
       try:
          guess = int(input('Enter a guess number from 1 - 100 : '))
          ansCheck(guess, randNum)
-         score += 1
+         score += 1  # record number of tries
          if guess == int:
              valid = True
              guess = int(input('Enter a guess number from 1 - 100 : '))
       except ValueError:
              print("Not Valid")
     
-
-# record number of tries
-
